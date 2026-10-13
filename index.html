@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Prasanth Ayitapu — Software engineering, Python backend development, applied machine learning, and research engineering.">
+<meta name="theme-color" content="#101114">
+<title>Prasanth Ayitapu | Software & Applied AI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#101114;--surface:#17191d;--surface2:#1d2025;--line:#30343b;--text:#f2f4f7;--muted:#a4aab4;--blue:#9bc7ff;--green:#a9e3bf;--max:1040px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:14px/1.7 Inter,system-ui,sans-serif}
+a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline;color:#d5e8ff}.wrap{width:min(var(--max),calc(100% - 36px));margin:auto}
+.cosmos{height:155px;position:relative;overflow:hidden;border-bottom:1px solid #383b42;background:radial-gradient(ellipse at 15% 65%,#b75e53b8,transparent 28%),radial-gradient(ellipse at 35% 20%,#6d4f9dbd,transparent 28%),radial-gradient(ellipse at 58% 70%,#c68b54bd,transparent 30%),radial-gradient(ellipse at 82% 28%,#326e9bbd,transparent 26%),linear-gradient(120deg,#11192d,#312440 45%,#142839 75%,#39231f)}
+.cosmos:before{content:"";position:absolute;inset:0;background-image:radial-gradient(1px 1px at 15% 20%,white 50%,transparent 75%),radial-gradient(2px 2px at 35% 70%,white 50%,transparent 75%),radial-gradient(1px 1px at 65% 35%,white 50%,transparent 75%),radial-gradient(1px 1px at 85% 75%,white 50%,transparent 75%);background-size:130px 90px;opacity:.75}
+header{padding:30px 0 23px}.eyebrow,.mono{font:11px "DM Mono",monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--blue)}
+.hero{display:grid;grid-template-columns:1fr 132px;gap:30px;align-items:center}.eyebrow{margin-bottom:10px}h1{font-size:clamp(30px,5vw,45px);letter-spacing:-.055em;line-height:1.1;margin:0 0 12px}h1 span{color:var(--blue)}.headline{font-size:16px;font-weight:600;margin:0 0 10px}.summary{max-width:720px;color:#c2c7cf;margin:0}.portrait{width:126px;aspect-ratio:1;border:1px solid #454b55;border-radius:10px;background:linear-gradient(145deg,#292e39,#17191d);display:grid;place-items:center;text-align:center;color:#b8c1ce}.portrait strong{display:block;font-size:38px;line-height:1.1;letter-spacing:-.07em;color:#f2f4f7}.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:18px}.btn{display:inline-block;padding:8px 12px;border:1px solid #454a54;border-radius:6px;color:#f1f3f6;font-size:12px}.btn.primary{background:#dbeaff;color:#111827;border-color:#dbeaff;font-weight:700}.meta{font-size:12px;color:var(--muted);margin-top:12px}
+nav{display:flex;flex-wrap:wrap;gap:7px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:13px 0}nav a{font-size:12px;color:#c9ced6;padding:5px 9px;border:1px solid #30343b;border-radius:5px}nav a:hover{background:#202329;text-decoration:none}
+section{padding:27px 0 3px}h2{font-size:19px;letter-spacing:-.03em;margin:0 0 5px}h3{font-size:14px;margin:0 0 5px}.sub{color:var(--muted);font-size:12px;margin:0 0 15px}
+.proof{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.proof-item{border:1px solid var(--line);background:var(--surface);padding:14px;border-radius:7px}.proof-item strong{font-size:17px;display:block;letter-spacing:-.03em}.proof-item span{font-size:11px;color:var(--muted)}
+.stack{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.stack-item{border:1px solid var(--line);background:var(--surface);border-radius:7px;padding:13px}.stack-item p{margin:4px 0 0;color:#c0c5ce;font-size:12px}.pills{display:flex;gap:6px;flex-wrap:wrap;margin-top:9px}.pill{font:10px "DM Mono",monospace;color:#c6d5e7;border:1px solid #343b46;background:#20242a;padding:4px 7px;border-radius:4px}
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.project{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:16px;display:flex;flex-direction:column}.project-top{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:9px}.label{font:10px "DM Mono",monospace;color:var(--green);text-transform:uppercase;letter-spacing:.08em}.project p{color:#c0c5ce;font-size:12px;margin:7px 0 9px}.project ul{margin:0;padding-left:17px;color:#c0c5ce;font-size:12px}.project li{margin:4px 0}.project .pills{margin-top:auto;padding-top:12px}.project .links{font-size:11px;margin-top:12px}
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:7px}table{border-collapse:collapse;width:100%;min-width:620px;font-size:12px}th,td{text-align:left;vertical-align:top;padding:11px 12px;border-bottom:1px solid var(--line);border-right:1px solid #282b31}th{background:#1c1f24;color:#e4e8ed;font-weight:600}td{color:#c0c5ce}tr:last-child td{border-bottom:0}td:first-child{color:#eef0f4}
+.experience{border:1px solid var(--line);border-radius:7px;background:var(--surface);padding:16px;display:grid;grid-template-columns:165px 1fr;gap:20px}.date{font:11px "DM Mono",monospace;color:var(--muted)}.role-meta{color:var(--muted);font-size:12px;margin-bottom:8px}.experience ul{padding-left:18px;margin:5px 0 0;color:#c0c5ce;font-size:12px}.experience li{margin:5px 0}
+.education{padding:15px;border:1px solid var(--line);border-radius:7px;background:var(--surface)}.education p{color:#c0c5ce;font-size:12px;margin:5px 0 0}
+.contact{border:1px solid var(--line);border-radius:8px;background:linear-gradient(130deg,#1a1d23,#15171b);padding:19px}.contact p{color:#c0c5ce;font-size:12px;margin:6px 0 12px}
+footer{margin-top:36px;padding:20px 0 30px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;color:var(--muted);font-size:11px}.top{position:fixed;bottom:16px;right:16px;background:#1c1f24;border:1px solid #444a54;border-radius:6px;padding:7px 10px;font-size:12px}
+@media(max-width:680px){.wrap{width:calc(100% - 26px)}.cosmos{height:115px}.hero{grid-template-columns:1fr;gap:16px}.portrait{width:94px}.proof{grid-template-columns:1fr}.stack,.projects{grid-template-columns:1fr}.experience{grid-template-columns:1fr;gap:5px}nav{gap:5px}}
+</style>
+</head>
+<body>
+<div class="cosmos" role="img" aria-label="Abstract cosmic banner"></div>
+<main class="wrap" id="top">
+<header>
+  <div class="eyebrow">Software Engineering · Python · Applied AI</div>
+  <div class="hero">
+    <div>
+      <h1>Prasanth <span>Ayitapu</span></h1>
+      <p class="headline">Python Developer · Backend & Data Systems · Applied Machine Learning</p>
+      <p class="summary">I build Python-based applications, data pipelines, and machine-learning workflows that solve practical problems. My experience includes deploying Flask applications on Linux, transforming complex documents into structured datasets, and developing forecasting and decision-support systems. I care about reliable implementation, debugging, and turning prototypes into usable tools.</p>
+      <div class="actions">
+        <a class="btn primary" href="assets/Prasanth_Ayitapu_Resume.pdf">View résumé ↗</a>
+        <a class="btn" href="mailto:karthikeya23p@gmail.com">Email me ↗</a>
+        <a class="btn" href="#projects">Explore projects ↓</a>
+      </div>
+      <div class="meta">Data Scientist – Research Associate · IDeAL Research Lab, IIM Visakhapatnam · Jul 2025 – Oct 2026</div>
+    </div>
+    <div class="portrait"><div><strong>PA</strong>Replace with<br>your photo</div></div>
+  </div>
+</header>
+<nav aria-label="Sections"><a href="#engineering">Engineering focus</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#stack">Technical skills</a><a href="#education">Education</a><a href="#contact">Contact</a></nav>
+
+<section id="engineering">
+<h2>Engineering Focus</h2><p class="sub">Practical experience across application development, deployment, data workflows, and applied ML.</p>
+<div class="proof">
+  <div class="proof-item"><strong>Built & deployed</strong><span>Flask applications on Linux with Gunicorn, HTTPS/SSL, and firewall configuration.</span></div>
+  <div class="proof-item"><strong>End-to-end data work</strong><span>Document extraction, cleaning, feature engineering, analysis, modelling, and dashboard delivery.</span></div>
+  <div class="proof-item"><strong>Applied ML & forecasting</strong><span>Sequence models, synthetic-data experiments, evaluation metrics, and temporal prediction workflows.</span></div>
+</div>
+</section>
+
+<section id="projects">
+<h2>Selected Technical Projects</h2><p class="sub">The projects below emphasize implementation, technical decisions, and practical outcomes. Add repository/demo links before publishing.</p>
+<div class="projects">
+<article class="project">
+  <div class="project-top"><span class="label">Web application · Deployment</span><span class="pill">01</span></div>
+  <h3>AP Groundwater Sustainability Dashboard</h3>
+  <p>A district-level decision-support application for exploring groundwater sustainability indicators and forecasts across Andhra Pradesh.</p>
+  <ul><li>Built a Python/Flask application around 13 indicators across 26 districts.</li><li>Created data workflows to extract and prepare information from CGWB PDF reports.</li><li>Deployed on Linux using Gunicorn, HTTPS/SSL, and UFW configuration.</li></ul>
+  <div class="pills"><span class="pill">Python</span><span class="pill">Flask</span><span class="pill">pandas</span><span class="pill">PDF extraction</span><span class="pill">Linux</span><span class="pill">Gunicorn</span></div>
+  <div class="links"><a href="mailto:karthikeya23p@gmail.com?subject=Groundwater%20Dashboard%20Demo">Request demo/details ↗</a></div>
+</article>
+<article class="project">
+  <div class="project-top"><span class="label">Data engineering · Network analysis</span><span class="pill">02</span></div>
+  <h3>International Trade Network Pipeline</h3>
+  <p>A multi-year pipeline to prepare trade data and calculate weighted network features for country-level analysis and forecasting.</p>
+  <ul><li>Worked with trade data spanning 1990–2025 and exports, imports, and net-trade measures.</li><li>Generated weighted node-property features for network-based analysis.</li><li>Evaluated prediction experiments for net trade and weighted PageRank.</li></ul>
+  <div class="pills"><span class="pill">Python</span><span class="pill">pandas</span><span class="pill">Network analysis</span><span class="pill">Feature engineering</span><span class="pill">Forecasting</span></div>
+</article>
+<article class="project">
+  <div class="project-top"><span class="label">Time series · ML evaluation</span><span class="pill">03</span></div>
+  <h3>Synthetic Time-Series Modelling</h3>
+  <p>Experiments with sequential generative modelling and forecasting, focusing on the quality and usefulness of generated data.</p>
+  <ul><li>Worked with LSTM-based models and TimeGAN/CTGAN-style approaches.</li><li>Compared outputs using prediction error, distributional tests, correlation metrics, and trajectory checks.</li><li>Designed experiments to run within CPU/offline notebook constraints where applicable.</li></ul>
+  <div class="pills"><span class="pill">Python</span><span class="pill">LSTM</span><span class="pill">TimeGAN</span><span class="pill">CTGAN</span><span class="pill">scikit-learn</span></div>
+</article>
+<article class="project">
+  <div class="project-top"><span class="label">Predictive analytics</span><span class="pill">04</span></div>
+  <h3>NIRF Decision-Support System</h3>
+  <p>A temporal modelling workflow for estimating institutional scores or rankings from historical NIRF data.</p>
+  <ul><li>Prepared year-wise institutional data for model development.</li><li>Implemented and assessed a historical-score-based prediction approach.</li><li>Worked with validation and error analysis to understand model behaviour.</li></ul>
+  <div class="pills"><span class="pill">Python</span><span class="pill">pandas</span><span class="pill">Time series</span><span class="pill">Model evaluation</span></div>
+</article>
+<article class="project">
+  <div class="project-top"><span class="label">Data extraction · Automation</span><span class="pill">05</span></div>
+  <h3>PDF-to-Structured-Data Workflows</h3>
+  <p>Reusable extraction and cleaning workflows for turning semi-structured reports into analysis-ready datasets.</p>
+  <ul><li>Used text and table extraction tools for varied PDF layouts.</li><li>Applied cleaning, validation, and fuzzy matching to handle inconsistent labels.</li><li>Designed outputs for downstream analysis and dashboard integration.</li></ul>
+  <div class="pills"><span class="pill">PyMuPDF</span><span class="pill">pdfplumber</span><span class="pill">pandas</span><span class="pill">OCR</span><span class="pill">OpenCV</span></div>
+</article>
+<article class="project">
+  <div class="project-top"><span class="label">Analytics · Dashboards</span><span class="pill">06</span></div>
+  <h3>Public-Health Indicator Dashboards</h3>
+  <p>Analytical dashboards supporting exploration of maternal and infant mortality indicators.</p>
+  <ul><li>Prepared indicator-focused datasets for analysis and visual communication.</li><li>Contributed to dashboard workflows for research and decision support.</li><li>Worked across data preparation, analytical logic, and web presentation.</li></ul>
+  <div class="pills"><span class="pill">Python</span><span class="pill">Data analysis</span><span class="pill">Flask</span><span class="pill">Visualisation</span></div>
+</article>
+</div>
+</section>
+
+<section id="experience">
+<h2>Professional Experience</h2>
+<div class="experience">
+  <div><div class="date">JUL 2025 — OCT 2026</div><div class="meta">Visakhapatnam, India</div></div>
+  <div><h3>Data Scientist – Research Associate</h3><div class="role-meta">IDeAL Research Lab · IIM Visakhapatnam</div>
+    <ul>
+      <li>Develop Python data pipelines to extract, clean, transform, and validate datasets from research and government sources.</li>
+      <li>Build analytical dashboards and forecasting workflows for groundwater, public-health, institutional-ranking, and trade-network projects.</li>
+      <li>Deploy and troubleshoot web applications on Linux with Gunicorn, HTTPS/SSL, and firewall configuration.</li>
+      <li>Run machine-learning experiments and compare models using suitable predictive and statistical evaluation metrics.</li>
+      <li>Translate research requirements into maintainable workflows, usable interfaces, and documented outputs.</li>
+    </ul>
+  </div>
+</div>
+</section>
+
+<section id="stack">
+<h2>Technical Skills</h2>
+<div class="stack">
+  <div class="stack-item"><h3>Programming & data</h3><p>Python, pandas, NumPy, data cleaning, data transformation, feature engineering, exploratory analysis.</p><div class="pills"><span class="pill">Python</span><span class="pill">pandas</span><span class="pill">NumPy</span></div></div>
+  <div class="stack-item"><h3>Backend & web applications</h3><p>Flask, REST-style application patterns, HTML/CSS fundamentals, application debugging, server-side deployment.</p><div class="pills"><span class="pill">Flask</span><span class="pill">HTTP/HTTPS</span><span class="pill">Debugging</span></div></div>
+  <div class="stack-item"><h3>Deployment & developer tools</h3><p>Linux/Ubuntu, Gunicorn, SSL configuration, UFW, Git, Jupyter Notebook, VS Code.</p><div class="pills"><span class="pill">Linux</span><span class="pill">Gunicorn</span><span class="pill">Git</span></div></div>
+  <div class="stack-item"><h3>Machine learning</h3><p>scikit-learn, forecasting, LSTM, synthetic-data modelling experiments, feature evaluation, error analysis.</p><div class="pills"><span class="pill">scikit-learn</span><span class="pill">LSTM</span><span class="pill">Forecasting</span></div></div>
+  <div class="stack-item"><h3>Data extraction & processing</h3><p>PDF text/table extraction, OCR workflows, document cleaning, fuzzy matching, structured-data validation.</p><div class="pills"><span class="pill">PyMuPDF</span><span class="pill">pdfplumber</span><span class="pill">OpenCV</span></div></div>
+  <div class="stack-item"><h3>Technical foundations</h3><p>Data structures and algorithms, databases, operating systems, computer networks, cybersecurity, analytical problem-solving.</p><div class="pills"><span class="pill">DSA</span><span class="pill">DBMS</span><span class="pill">Networking</span></div></div>
+</div>
+</section>
+
+<section id="education">
+<h2>Education</h2><div class="education"><h3>B.Tech — Electronics & Computer Engineering</h3><div class="role-meta">Amrita Vishwa Vidyapeetham, Bengaluru · 2021–2025</div><p>Relevant coursework included data structures and algorithms, advanced algorithms, DBMS, operating systems, computer networks, cybersecurity, image processing, and big data analytics.</p></div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2><div class="contact"><h3>Let’s talk about engineering problems worth solving.</h3><p>Open to early-career opportunities in Python/backend engineering, software engineering, applied AI/ML, data science, and research engineering. I’m based in India and open to remote opportunities as well as roles in India.</p><div class="actions"><a class="btn primary" href="mailto:karthikeya23p@gmail.com">karthikeya23p@gmail.com ↗</a><a class="btn" href="https://www.linkedin.com/in/prasanth23k/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a class="btn" href="https://github.com/prasantha23k" target="_blank" rel="noreferrer">GitHub ↗</a></div></div></section>
+<footer><span>© <span id="year"></span> Prasanth Ayitapu</span><span>Built with HTML & CSS · Designed for technical hiring</span></footer>
+</main><a class="top" href="#top">↑ Top</a>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body></html>
